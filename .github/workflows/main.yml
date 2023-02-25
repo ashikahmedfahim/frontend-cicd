@@ -26,4 +26,4 @@ jobs:
           npm install
           npm run build
           cp -r build/* ./
-          cp /home/ashik/env/frontend-cicd/.env.local /var/www/frontend-cicd/_works/frontend-cicd/frontend-cicd
+          cp /home/ashik/env/frontend-cicd/.env.local /var/www/frontend-cicd/_work/frontend-cicd/frontend-cicd/
