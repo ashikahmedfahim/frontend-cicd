@@ -18,6 +18,9 @@ function App() {
     <h1>
       User name is {data.name}
     </h1>
+    <h3>
+      New updates are coming soon
+    </h3>
   </div>;
 }
 
