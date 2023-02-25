@@ -24,6 +24,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: |
           npm install
+          cp /home/ashik/env/frontend-cicd/.env.local /var/www/frontend-cicd/_work/frontend-cicd/frontend-cicd/
           npm run build
           cp -r build/* ./
-          cp /home/ashik/env/frontend-cicd/.env.local /var/www/frontend-cicd/_work/frontend-cicd/frontend-cicd/
