@@ -1,0 +1,19 @@
+name: frontend ci cd
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on : self-hosted
+    steps:
+      - name: get code
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
